@@ -19,7 +19,7 @@ function CuboidMaker(length, width, height){   //could pass in an object to make
 
 CuboidMaker.prototype.volume = function(){
   let vol = this.length * this.width * this.height
-  return `The volume of this cuboid is ${vol};
+  return `The volume of this cuboid is ${vol}`;
 }
 
 
@@ -29,6 +29,10 @@ CuboidMaker.prototype.volume = function(){
   Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 */
 
+CuboidMaker.prototype.surfaceArea = function(){
+  let sArea = 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
+  return `The surface area of this cuboid is ${sArea}`;
+}
 
 /* == Step 4: Create a new object that uses CuboidMaker ==
   Create a cuboid object that uses the new keyword to use our CuboidMaker constructor
